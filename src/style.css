@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(rgb(118, 21, 230), rgb(0, 162, 255));
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.initial-screen {
+    display: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 40%;
+    padding: 35px 25px;
+    border-radius: 15px;
+}
+
+.information-screen {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 30%;
+    padding: 35px 25px;
+    border-radius: 15px;
+}
+
+.input-text {
+    margin: 10px 0;
+    display: flex;
+    /* border: 1px solid red; */
+}
+
+#city-input,
+#city-input-information {
+    width: 85%;
+    height: 40px;
+    font-size: 16px;
+    padding: 10px 2%;
+    border: none;
+    border-radius: 5px;
+    /* color: #fff; */
+    /* background-color: rgba(0, 0, 0, 0.4); */
+}
+
+#search-btn,
+#search-btn-information {
+    width: 15%;
+    margin-left: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #01c4ff;
+    color: white;
+    font-size: 18px;
+}
+
+#city-input:focus,
+#city-input-information:focus  {
+    outline: none;
+}
+
+hr{
+    margin: 30px 0;
+}
+
+.cities-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.city-button {
+    width: 35%;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    height: 35px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    background-color: #3199fa;
+    font-size: 14px;
+    user-select: none;
+}
+
+.city-button:nth-child(2n + 1){
+    margin-left: 0;
+}
+
+.city-button:nth-child(7),
+.city-button:nth-child(8) {
+    margin-bottom: 0;
+}
+
+.city-button:hover {
+    background-color: #2b8fec;
+}
+
+.city-button:active {
+    background-color: #237ccf;
+}
+
+.main-informations .city-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-informations .city-name i {
+    font-size: 21px;
+}
+
+.main-informations .city-name .country-flag {
+    width: 25px;
+    height: 18px;
+    /* background-color: red; */
+}
+
+.city-elements {
+    margin-right: 10px;
+}
+
+.city-elements:nth-child(3) {
+    margin-right: 0;
+}
+
+.temperature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.temperature h1 {
+    font-size: 56px;
+    font-weight: normal;
+}
+
+.temperature-elements {
+    margin-top: 10px;
+}

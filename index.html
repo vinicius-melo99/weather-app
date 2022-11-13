@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <script src="./src/main.js" type="module" defer></script>
+    <script src="https://kit.fontawesome.com/e5d828a120.js" crossorigin="anonymous"></script>
+    <title>Clima Agora</title>
+</head>
+<body>
+    <main class="initial-screen">
+        <h3>Confira o clima de uma cidade:</h3>
+        <section class="input-text">
+            <input type="text" name="" id="city-input" placeholder="Digite o nome da cidade">
+            <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </section>
+        <hr>
+        <section class="cities-buttons">
+            <button class="city-button">São Paulo</button>
+            <button class="city-button">Nova York</button>
+            <button class="city-button">Tokyo</button>
+            <button class="city-button">Pequin</button>
+            <button class="city-button">Londres</button>
+            <button class="city-button">Viena</button>
+            <button class="city-button">Paris</button>
+            <button class="city-button">Vancouver</button>
+        </section>
+    </main>
+
+    <!-- tela de informações, oculta inicialmente -->
+    <section class="information-screen">
+        <h3>Confira o clima de uma cidade:</h3>
+        <section class="input-text">
+            <input type="text" name="" id="city-input-information" placeholder="Digite o nome da cidade">
+            <button id="search-btn-information"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </section>
+        <hr>
+
+        <section class="main-informations">
+
+            <section class="city-name">
+                <section class="city-elements">
+                    <i class="fa-solid fa-location-dot"></i>
+                </section>
+                <section class="city-elements">
+                    <h2 id="city-name-field">City</h2>
+                </section>
+                <section class="city-elements">
+                    <div class="country-flag"></div>
+                </section>
+            </section>
+
+            <section class="temperature">
+                <section class="temperature-elements">
+                    <h1><span>34</span>°C</h1>
+                </section>
+                <section class="temperature-elements">
+                    <span id="weather-state">Nublado</span>
+                </section>
+            </section>
+            <section class="weather-condition"></section>
+        </section>
+    </section>
+</body>
+</html>
