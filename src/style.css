@@ -15,7 +15,7 @@ body {
 }
 
 .initial-screen {
-    display: none;
+    /* display: flex; */
     color: white;
     background-color: rgba(0, 0, 0, 0.2);
     width: 40%;
@@ -24,6 +24,7 @@ body {
 }
 
 .information-screen {
+    display: none;
     color: white;
     background-color: rgba(0, 0, 0, 0.2);
     width: 30%;
