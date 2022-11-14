@@ -144,5 +144,61 @@ hr{
 }
 
 .temperature-elements {
+    display: flex;
     margin-top: 10px;
 }
+
+#weather-state-icon {
+    width: 25px;
+    height: 18px;
+    margin-left: 10px;
+    background-color: red;
+}
+
+.weather-condition {
+    display: flex;
+}
+
+.weather-condition-wraper {
+    width: 50%;
+    display: flex;
+    padding: 7px 0;
+    justify-content: center;
+    margin-top: 20px;
+    border-left: 1px solid #fff;
+}
+
+.weather-condition-wraper:nth-child(1) {
+    border-left: none;
+    justify-content: flex-end;
+    padding-right: 15px;
+}
+
+.weather-condition-wraper:nth-child(2) {
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+
+.weather-condition-wraper i {
+    margin-right: 7px;
+}
+
+@media screen and (max-width: 1024px) {
+    .information-screen {
+        width: 55%;
+        height: 350px;
+    }
+
+    body {
+        padding: 30px 2%;
+        background-size: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .information-screen {
+        width: 90%;
+        height: 350px;
+    }
+}
+
